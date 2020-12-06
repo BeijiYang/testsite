@@ -7,6 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>test site for joy</title>
   <style>
+    body {
+      height: 100vh;
+      font-family: fantasy, "Gill Sans", sans-serif;
+    }
+
     header {
       margin-top: 20px;
       font-size: 24px;
@@ -32,7 +37,10 @@
       transition: all 450ms ease;
       background-color: #fff;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-      object-fit: contain;
+      flex-grow: 0;
+      flex-shrink: 0;
+      object-fit: scale-down;
+      padding: 10px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -86,7 +94,10 @@
                                                                     
 
     </pre>
-    <img src="http://5b0988e595225.cdn.sohucs.com/images/20180204/1367d4b1a68a4dd3851a4aec9e6ebe5f.jpeg" alt="The Birthday, 1887 by Marc Chagall">
+    <div>
+      <img src="http://5b0988e595225.cdn.sohucs.com/images/20180204/1367d4b1a68a4dd3851a4aec9e6ebe5f.jpeg" alt="The Birthday, 1887 by Marc Chagall"
+        width=”100%”>
+    </div>
   </div>
 </body>
 
