@@ -7,29 +7,58 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>test site for joy</title>
   <style>
+    header {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: lighter;
+      text-align: center;
+    }
+
     .content {
       display: flex;
       justify-content: space-evenly;
+      flex-wrap: wrap;
     }
 
     pre {
-      width: 500px;
-      margin: 0 20px;
-      padding-top: 50px;
+      display: none;
     }
 
     img {
       margin: 20px;
       padding: 10px;
+      width: calc(100% - 60px);
+      max-width: 500px;
       transition: all 450ms ease;
       background-color: #fff;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-      width: 500px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      header {
+        display: none;
+      }
+
+      .content {
+        flex-wrap: nowrap;
+      }
+
+      pre {
+        display: block;
+        width: 100%;
+        margin: 0 20px;
+        padding-top: 50px;
+      }
+
+      img {
+        width: 500px;
+      }
     }
   </style>
 </head>
 
 <body>
+  <header>Joy from summer</header>
   <div class="content">
     <pre>
       
